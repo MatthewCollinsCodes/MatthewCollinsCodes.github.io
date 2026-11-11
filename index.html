@@ -192,7 +192,7 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(40px,6vw,76px);line-
 .pieces li{display:grid;grid-template-columns:70px 1fr auto;gap:20px;align-items:baseline;padding:28px 0;border-bottom:1px solid var(--line);transition:padding .5s var(--ease),color .3s}
 .pieces .n{font-family:var(--mono);font-size:12px;color:var(--dim);letter-spacing:.1em}
 .pieces .t{font-family:var(--serif);font-size:clamp(26px,3.8vw,48px);line-height:1.08;letter-spacing:-.01em;transition:color .3s}
-.pieces .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.pieces .k{white-space:nowrap;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .pieces li:hover{padding-left:18px}
 .pieces li:hover .t{color:var(--gold-2);font-style:italic}
 @media(max-width:720px){.pieces li{grid-template-columns:36px 1fr}.pieces .k{display:none}}
@@ -281,7 +281,7 @@ footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid 
       <div data-reveal>
         <p class="lede">I’m an undergraduate at Saint Anselm College studying Computer Science with Mathematics, with minors in Cyber Criminology and Theology.</p>
         <p>As co-founder and CTO of StudySyncEd, I lead development of an AI-powered platform that helps students study more effectively for their specific courses. On campus, I administer the Computer Science department’s Windows workstations and Apache web servers, and evaluate AI model outputs as a Handshake AI Fellow.</p>
-        <p>Outside the terminal, I serve as Grand Knight of Knights of Columbus Council #4875, tutor five computer science and mathematics courses, and write opinion pieces for the <em>Saint Anselm Crier</em>. I’m an Eagle Scout from Hanover, Massachusetts.</p>
+        <p>Outside the terminal, I serve as Grand Knight of Knights of Columbus Council #4875, tutor five computer science and mathematics courses, and write for the <em>Saint Anselm Crier</em>. I’m an Eagle Scout from Hanover, Massachusetts.</p>
       </div>
       <ul class="facts" data-reveal style="--d:2">
         <li><span>Degree</span><span>B.A. Computer Science with Mathematics</span></li>
@@ -297,7 +297,7 @@ footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid 
       <div class="stat"><b><span data-count="20">20</span>+</b><p>Council members, grown from just three as Grand Knight</p></div>
       <div class="stat"><b><span data-count="100">100</span>+</b><p>Scouts led as Senior Patrol Leader of Troop 38</p></div>
       <div class="stat"><b><span data-count="3">3</span></b><p>LLM families integrated into StudySyncEd</p></div>
-      <div class="stat"><b><span data-count="5">5</span></b><p>Opinion pieces published in the Saint Anselm Crier</p></div>
+      <div class="stat"><b><span data-count="8">8</span></b><p>Articles published in the Saint Anselm Crier</p></div>
     </div>
   </div>
 </section>
@@ -415,7 +415,7 @@ footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid 
       <article class="card" data-reveal>
         <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></svg></div>
         <h3>Eagle Scout &amp; Senior Patrol Leader</h3>
-        <div class="meta">BSA Troop 38 · Hanover, MA · 2022 — 2023</div>
+        <div class="meta">BSA Troop 38 · Hanover, MA · 2016 — 2023</div>
         <p>Led a troop of over 100 Scouts — planning and running troop meetings, hikes, campouts, and other activities.</p>
       </article>
       <article class="card" data-reveal style="--d:1">
@@ -437,14 +437,16 @@ footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid 
 <!-- ───────────── WRITING ───────────── -->
 <section id="writing">
   <div class="wrap">
-    <div class="head" data-reveal><span class="mono">05 / Writing</span><h2>Opinions, <em>in print</em>.</h2></div>
-    <div class="masthead" data-reveal><span class="mono">The Saint Anselm Crier</span><span class="mono">Opinion</span></div>
+    <div class="head" data-reveal><span class="mono">05 / Writing</span><h2>Words, <em>in print</em>.</h2></div>
+    <div class="masthead" data-reveal><span class="mono">The Saint Anselm Crier</span><span class="mono">Opinion &amp; News</span></div>
     <ol class="pieces">
-      <li data-reveal><span class="n">01</span><span class="t">DeepSeek AI makes cheating as easy as pie</span><span class="k">AI &amp; Academia</span></li>
-      <li data-reveal><span class="n">02</span><span class="t">Conversatio replacement is an attack on Catholic values</span><span class="k">Curriculum</span></li>
-      <li data-reveal><span class="n">03</span><span class="t">Why we need a Benedictine monk to lead Campus Ministry</span><span class="k">Campus Life</span></li>
-      <li data-reveal><span class="n">04</span><span class="t">The modern-day gateway drug to the seven deadly sins</span><span class="k">Culture</span></li>
-      <li data-reveal><span class="n">05</span><span class="t">A Screwtape Halloween</span><span class="k">Satire</span></li>
+      <li data-reveal><span class="n">01</span><a class="t" href="https://criernewsroom.com/opinion/2026/02/11/culture-of-death-is-dignity-in-death-eclipsing-the-sanctity-of-life/" target="_blank" rel="noopener">Culture of Death: Is dignity in death eclipsing the sanctity of life?</a><span class="k">Opinion · Feb 2026</span></li>
+      <li data-reveal><span class="n">02</span><a class="t" href="https://criernewsroom.com/news/2026/02/11/center-for-ethics-in-society-hosts-high-school-ethics-bowl/" target="_blank" rel="noopener">Center for Ethics in Society hosts high school Ethics Bowl</a><span class="k">News · Feb 2026</span></li>
+      <li data-reveal><span class="n">03</span><a class="t" href="https://criernewsroom.com/opinion/2025/10/31/a-screwtape-halloween/" target="_blank" rel="noopener">A Screwtape Halloween</a><span class="k">Opinion · Oct 2025</span></li>
+      <li data-reveal><span class="n">04</span><a class="t" href="https://criernewsroom.com/opinion/2025/04/10/the-new-deepseek-ai-makes-cheating-as-easy-as-pie/" target="_blank" rel="noopener">The new DeepSeek AI makes cheating as easy as pie</a><span class="k">Opinion · Apr 2025</span></li>
+      <li data-reveal><span class="n">05</span><a class="t" href="https://criernewsroom.com/opinion/2025/03/27/social-media-gateway-drug-to-the-seven-deadly-sins/" target="_blank" rel="noopener">Social media gateway drug to the seven deadly sins</a><span class="k">Opinion · Mar 2025</span></li>
+      <li data-reveal><span class="n">06</span><a class="t" href="https://criernewsroom.com/opinion/2025/02/20/why-we-need-a-benedictine-monk-to-lead-campus-ministry/" target="_blank" rel="noopener">Why we need a Benedictine monk to lead Campus Ministry</a><span class="k">Opinion · Feb 2025</span></li>
+      <li data-reveal><span class="n">07</span><a class="t" href="https://criernewsroom.com/opinion/2024/12/05/conversatio-replacement-is-an-attack-on-catholic-values/" target="_blank" rel="noopener">Conversatio replacement is an attack on Catholic values</a><span class="k">Opinion · Dec 2024</span></li>
     </ol>
   </div>
 </section>
