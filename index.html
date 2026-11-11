@@ -223,9 +223,12 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(40px,6vw,76px);line-
 #contact .hero-cta{justify-content:center;position:relative}
 .mail{position:relative;display:inline-block;margin-top:34px;font-family:var(--mono);font-size:clamp(14px,2vw,18px);color:var(--muted);border-bottom:1px solid var(--line-2);padding-bottom:4px;transition:color .3s,border-color .3s}
 .mail:hover{color:var(--gold-2);border-color:var(--gold)}
-footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid var(--line);padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid var(--line);padding-top:26px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px}
+footer>:first-child{justify-self:start}
+footer>:nth-child(3){justify-self:end}
+@media(max-width:720px){footer{grid-template-columns:1fr}footer>*{justify-self:center!important}}
 
-#contact .motto{flex-basis:100%;max-width:none;margin:18px 0 0;text-align:center;font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.6vw,30px);letter-spacing:.02em;color:var(--gold)}
+#contact .motto{grid-column:1/-1;max-width:none;margin:18px 0 0;text-align:center;font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.6vw,30px);letter-spacing:.02em;color:var(--gold)}
 
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
