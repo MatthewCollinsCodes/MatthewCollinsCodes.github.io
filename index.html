@@ -88,7 +88,12 @@ h1 .l2{font-style:italic;color:var(--gold-2);padding-left:.42em}
 .scrollcue i{display:block;width:1px;height:42px;background:var(--line-2);position:relative;overflow:hidden}
 .scrollcue i::after{content:"";position:absolute;left:0;top:-50%;width:1px;height:50%;background:var(--gold);animation:drop 2.2s var(--ease) infinite}
 @keyframes drop{to{top:100%}}
-@media(max-width:860px){.fig{display:none}.hero .wrap{padding-bottom:130px}}
+.alsonote{display:flex;align-items:center;gap:18px;margin-top:34px;color:#bdb7a9;font-size:16px}
+.alsonote b{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-right:6px}
+.xw{flex:none;display:grid;grid-template-columns:repeat(3,11px);gap:2px}
+.xw i{width:11px;height:11px;border:1px solid var(--line-2);border-radius:2px}
+.xw i:nth-child(2),.xw i:nth-child(6),.xw i:nth-child(7){background:var(--gold);border-color:var(--gold)}
+@media(max-width:860px){.role{white-space:nowrap;font-size:min(13px,3.3vw);gap:10px}.role-label{display:none}.fig{display:none}.hero .wrap{padding-bottom:130px}}
 
 /* intro load animation */
 .js .rise{opacity:0;transform:translateY(28px);animation:rise 1.1s var(--ease) forwards;animation-delay:calc(var(--i,0)*110ms + 150ms)}
@@ -257,7 +262,7 @@ footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid 
     <div class="hero-eyebrow rise" style="--i:0"><i></i><span class="mono">Computer Science × Mathematics · Saint Anselm College ’28</span></div>
     <h1><span class="rise" style="--i:1">Matthew</span><span class="l2 rise" style="--i:2">Collins</span></h1>
     <p class="hero-sub rise" style="--i:3">I build AI-powered tools for students, keep a computer science department’s systems running, and lead the communities I belong to.</p>
-    <div class="role rise" style="--i:4"><span class="dot"></span><span>Currently —</span> <b id="role">Co-Founder &amp; CTO, StudySyncEd</b></div>
+    <div class="role rise" style="--i:4"><span class="dot"></span><span class="role-label">Currently —</span> <b id="role">Co-Founder &amp; CTO, StudySyncEd</b></div>
     <div class="hero-cta rise" style="--i:5">
       <a class="pill solid" href="#venture">See what I’m building
         <svg viewBox="0 0 14 14" fill="none"><path d="M3 11 11 3M5 3h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -281,7 +286,7 @@ footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid 
       <div data-reveal>
         <p class="lede">I’m an undergraduate at Saint Anselm College studying Computer Science with Mathematics, with minors in Cyber Criminology and Theology.</p>
         <p>As co-founder and CTO of StudySyncEd, I lead development of an AI-powered platform that helps students study more effectively for their specific courses. On campus, I administer the Computer Science department’s Windows workstations and Apache web servers, and evaluate AI model outputs as a Handshake AI Fellow.</p>
-        <p>Outside the terminal, I serve as Grand Knight of Knights of Columbus Council #4875, tutor five computer science and mathematics courses, and write for the <em>Saint Anselm Crier</em>. I’m an Eagle Scout from Hanover, Massachusetts.</p>
+        <p>Outside the terminal, I serve as Grand Knight of Knights of Columbus Council #4875, tutor five computer science and mathematics courses, and write articles and create crossword puzzles for the <em>Saint Anselm Crier</em>. I’m an Eagle Scout from Hanover, Massachusetts.</p>
       </div>
       <ul class="facts" data-reveal style="--d:2">
         <li><span>Degree</span><span>B.A. Computer Science with Mathematics</span></li>
@@ -297,7 +302,7 @@ footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid 
       <div class="stat"><b><span data-count="20">20</span>+</b><p>Council members, grown from just three as Grand Knight</p></div>
       <div class="stat"><b><span data-count="100">100</span>+</b><p>Scouts led as Senior Patrol Leader of Troop 38</p></div>
       <div class="stat"><b><span data-count="3">3</span></b><p>LLM families integrated into StudySyncEd</p></div>
-      <div class="stat"><b><span data-count="8">8</span></b><p>Articles published in the Saint Anselm Crier</p></div>
+      <div class="stat"><b><span data-count="11">11</span></b><p>Articles published in the Saint Anselm Crier</p></div>
     </div>
   </div>
 </section>
@@ -438,16 +443,20 @@ footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid 
 <section id="writing">
   <div class="wrap">
     <div class="head" data-reveal><span class="mono">05 / Writing</span><h2>Words, <em>in print</em>.</h2></div>
-    <div class="masthead" data-reveal><span class="mono">The Saint Anselm Crier</span><span class="mono">Opinion &amp; News</span></div>
+    <div class="masthead" data-reveal><span class="mono">The Saint Anselm Crier</span><span class="mono">Articles &amp; Crosswords</span></div>
     <ol class="pieces">
-      <li data-reveal><span class="n">01</span><a class="t" href="https://criernewsroom.com/opinion/2026/02/11/culture-of-death-is-dignity-in-death-eclipsing-the-sanctity-of-life/" target="_blank" rel="noopener">Culture of Death: Is dignity in death eclipsing the sanctity of life?</a><span class="k">Opinion · Feb 2026</span></li>
-      <li data-reveal><span class="n">02</span><a class="t" href="https://criernewsroom.com/news/2026/02/11/center-for-ethics-in-society-hosts-high-school-ethics-bowl/" target="_blank" rel="noopener">Center for Ethics in Society hosts high school Ethics Bowl</a><span class="k">News · Feb 2026</span></li>
-      <li data-reveal><span class="n">03</span><a class="t" href="https://criernewsroom.com/opinion/2025/10/31/a-screwtape-halloween/" target="_blank" rel="noopener">A Screwtape Halloween</a><span class="k">Opinion · Oct 2025</span></li>
-      <li data-reveal><span class="n">04</span><a class="t" href="https://criernewsroom.com/opinion/2025/04/10/the-new-deepseek-ai-makes-cheating-as-easy-as-pie/" target="_blank" rel="noopener">The new DeepSeek AI makes cheating as easy as pie</a><span class="k">Opinion · Apr 2025</span></li>
-      <li data-reveal><span class="n">05</span><a class="t" href="https://criernewsroom.com/opinion/2025/03/27/social-media-gateway-drug-to-the-seven-deadly-sins/" target="_blank" rel="noopener">Social media gateway drug to the seven deadly sins</a><span class="k">Opinion · Mar 2025</span></li>
-      <li data-reveal><span class="n">06</span><a class="t" href="https://criernewsroom.com/opinion/2025/02/20/why-we-need-a-benedictine-monk-to-lead-campus-ministry/" target="_blank" rel="noopener">Why we need a Benedictine monk to lead Campus Ministry</a><span class="k">Opinion · Feb 2025</span></li>
-      <li data-reveal><span class="n">07</span><a class="t" href="https://criernewsroom.com/opinion/2024/12/05/conversatio-replacement-is-an-attack-on-catholic-values/" target="_blank" rel="noopener">Conversatio replacement is an attack on Catholic values</a><span class="k">Opinion · Dec 2024</span></li>
+      <li data-reveal><span class="n">01</span><span class="t">Beyond the Lesser of Two Evils</span><span class="k">Politics</span></li>
+      <li data-reveal><span class="n">02</span><span class="t">On the value of boredom</span><span class="k">Culture</span></li>
+      <li data-reveal><span class="n">03</span><span class="t">President Trump eroding his relationship with American Catholics</span><span class="k">Faith &amp; Politics</span></li>
+      <li data-reveal><span class="n">04</span><a class="t" href="https://criernewsroom.com/opinion/2026/02/11/culture-of-death-is-dignity-in-death-eclipsing-the-sanctity-of-life/" target="_blank" rel="noopener">Culture of Death: Is dignity in death eclipsing the sanctity of life?</a><span class="k">Life &amp; Ethics</span></li>
+      <li data-reveal><span class="n">05</span><a class="t" href="https://criernewsroom.com/news/2026/02/11/center-for-ethics-in-society-hosts-high-school-ethics-bowl/" target="_blank" rel="noopener">Center for Ethics in Society hosts high school Ethics Bowl</a><span class="k">Campus News</span></li>
+      <li data-reveal><span class="n">06</span><a class="t" href="https://criernewsroom.com/opinion/2025/10/31/a-screwtape-halloween/" target="_blank" rel="noopener">A Screwtape Halloween</a><span class="k">Satire</span></li>
+      <li data-reveal><span class="n">07</span><a class="t" href="https://criernewsroom.com/opinion/2025/04/10/the-new-deepseek-ai-makes-cheating-as-easy-as-pie/" target="_blank" rel="noopener">The new DeepSeek AI makes cheating as easy as pie</a><span class="k">AI &amp; Academia</span></li>
+      <li data-reveal><span class="n">08</span><a class="t" href="https://criernewsroom.com/opinion/2025/03/27/social-media-gateway-drug-to-the-seven-deadly-sins/" target="_blank" rel="noopener">Social media gateway drug to the seven deadly sins</a><span class="k">Culture</span></li>
+      <li data-reveal><span class="n">09</span><a class="t" href="https://criernewsroom.com/opinion/2025/02/20/why-we-need-a-benedictine-monk-to-lead-campus-ministry/" target="_blank" rel="noopener">Why we need a Benedictine monk to lead Campus Ministry</a><span class="k">Campus Life</span></li>
+      <li data-reveal><span class="n">10</span><a class="t" href="https://criernewsroom.com/opinion/2024/12/05/conversatio-replacement-is-an-attack-on-catholic-values/" target="_blank" rel="noopener">Conversatio replacement is an attack on Catholic values</a><span class="k">Curriculum</span></li>
     </ol>
+    <p class="alsonote" data-reveal><span class="xw" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span><b>Also in the Crier —</b> I’ve created crossword puzzles for the paper.</span></p>
   </div>
 </section>
 
@@ -552,7 +561,7 @@ footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid 
   }));
 
   /* ── rotating role ── */
-  const roles = ['Co-Founder & CTO, StudySyncEd', 'System Administrator Assistant, CS Dept.', 'AI Evaluation Specialist, Handshake AI', 'Grand Knight, K of C Council #4875', 'Peer Tutor, Computer Science & Mathematics'];
+  const roles = ['Co-Founder & CTO, StudySyncEd', 'System Administrator Assistant, CS Dept.', 'AI Evaluation Specialist, Handshake AI', 'Grand Knight, K of C Council #4875', 'Peer Tutor, Academic Resource Center'];
   const roleEl = $('#role'); let ri = 0;
   if (!reduce) setInterval(() => {
     roleEl.classList.add('out');
