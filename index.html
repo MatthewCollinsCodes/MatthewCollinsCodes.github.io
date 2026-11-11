@@ -177,6 +177,9 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(40px,6vw,76px);line-
 .card h3{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.1}
 .card .meta{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:8px}
 .card p{margin-top:16px;color:#bdb7a9;font-size:15.5px}
+.courses{margin-top:18px;border-top:1px solid var(--line)}
+.courses li{display:flex;gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px;line-height:1.45;color:#d4cebf}
+.courses li span{flex:none;width:56px;font-family:var(--mono);font-size:12px;color:var(--gold);padding-top:2px}
 .card .big{font-family:var(--serif);font-size:clamp(56px,7vw,92px);line-height:1;color:var(--gold-2);display:flex;align-items:center;gap:18px;margin:6px 0 4px}
 .card .big svg{width:.6em;height:.6em;color:var(--gold)}
 .card .big small{font-size:.45em;color:var(--muted)}
@@ -278,7 +281,7 @@ footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid 
       <div data-reveal>
         <p class="lede">I’m an undergraduate at Saint Anselm College studying Computer Science with Mathematics, with minors in Cyber Criminology and Theology.</p>
         <p>As co-founder and CTO of StudySyncEd, I lead development of an AI-powered platform that helps students study more effectively for their specific courses. On campus, I administer the Computer Science department’s Windows workstations and Apache web servers, and evaluate AI model outputs as a Handshake AI Fellow.</p>
-        <p>Outside the terminal, I serve as Grand Knight of Knights of Columbus Council #4875, tutor Intro to Computer Science and Discrete Mathematics, and write opinion pieces for the <em>Saint Anselm Crier</em>. I’m an Eagle Scout from Hanover, Massachusetts.</p>
+        <p>Outside the terminal, I serve as Grand Knight of Knights of Columbus Council #4875, tutor five computer science and mathematics courses, and write opinion pieces for the <em>Saint Anselm Crier</em>. I’m an Eagle Scout from Hanover, Massachusetts.</p>
       </div>
       <ul class="facts" data-reveal style="--d:2">
         <li><span>Degree</span><span>B.A. Computer Science with Mathematics</span></li>
@@ -400,7 +403,14 @@ footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid 
         <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 5l9 4.5-9 4.5-9-4.5Z"/><path d="M7 12v4.5c1.4 1.3 3.1 2 5 2s3.6-.7 5-2V12M21 9.5V15"/></svg></div>
         <h3>Peer Tutor</h3>
         <div class="meta">Academic Resource Center · Sep 2026 — Present</div>
-        <p>Tutor students in Introduction to Computer Science (CS111) and Discrete Mathematics (CS115) through weekly office hours and individual sessions.</p>
+        <p>Tutor students across five courses through weekly office hours and individual sessions.</p>
+        <ul class="courses">
+          <li><span>CS 101</span>Digital Literacy in the AI Age</li>
+          <li><span>CS 111</span>Computing I</li>
+          <li><span>CS 115</span>Discrete Math I</li>
+          <li><span>CS 213</span>Data Structures and Algorithms</li>
+          <li><span>MA 170</span>Calculus I</li>
+        </ul>
       </article>
       <article class="card" data-reveal>
         <div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></svg></div>
@@ -540,7 +550,7 @@ footer{position:relative;margin-top:clamp(80px,10vw,130px);border-top:1px solid 
   }));
 
   /* ── rotating role ── */
-  const roles = ['Co-Founder & CTO, StudySyncEd', 'System Administrator Assistant, CS Dept.', 'AI Evaluation Specialist, Handshake AI', 'Grand Knight, K of C Council #4875', 'Peer Tutor, CS111 & CS115'];
+  const roles = ['Co-Founder & CTO, StudySyncEd', 'System Administrator Assistant, CS Dept.', 'AI Evaluation Specialist, Handshake AI', 'Grand Knight, K of C Council #4875', 'Peer Tutor, Computer Science & Mathematics'];
   const roleEl = $('#role'); let ri = 0;
   if (!reduce) setInterval(() => {
     roleEl.classList.add('out');
